@@ -45,7 +45,7 @@ class _MyAppState extends State<MyApp> {
               ),
               Container(
                 child: Center(
-                  child: Text('more'),
+                  child: Text('moreVideos'),
                 ),
               ),
             ],
