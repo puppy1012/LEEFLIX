@@ -1,3 +1,4 @@
+import 'package:asfw3/model/model_movie.dart';
 import 'package:flutter/material.dart';
 //영화정보 상단바,전체화면,포스터 등 구현
 
@@ -6,6 +7,15 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  List<Movie> movies = [
+    Movie.formMap({
+      'title': '사랑의 불시착',
+      'keyword': '사랑/로맨스/판타지',
+      'poster': 'test_movie_1.png',
+      'like': false
+    })
+  ];
+
   @override
   void initState() {
     super.initState();
