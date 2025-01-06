@@ -1,4 +1,5 @@
 import 'package:asfw3/model/model_movie.dart';
+import 'package:asfw3/widget/carousel_slider.dart';
 import 'package:flutter/material.dart';
 //영화정보 상단바,전체화면,포스터 등 구현
 
@@ -13,7 +14,25 @@ class _HomeScreenState extends State<HomeScreen> {
       'keyword': '사랑/로맨스/판타지',
       'poster': 'test_movie_1.png',
       'like': false
-    })
+    }),
+    Movie.formMap({
+      'title': '사랑의 불시착',
+      'keyword': '사랑/로맨스/판타지',
+      'poster': 'test_movie_1.png',
+      'like': false
+    }),
+    Movie.formMap({
+      'title': '사랑의 불시착',
+      'keyword': '사랑/로맨스/판타지',
+      'poster': 'test_movie_1.png',
+      'like': false
+    }),
+    Movie.formMap({
+      'title': '사랑의 불시착',
+      'keyword': '사랑/로맨스/판타지',
+      'poster': 'test_movie_1.png',
+      'like': false
+    }),
   ];
 
   @override
@@ -23,7 +42,16 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return TopBar();
+    return ListView(
+      children: <Widget>[
+        Stack(
+          children: <Widget>[
+            CarouselImage(movies: movies),
+            TopBar(),
+          ],
+        )
+      ],
+    );
   }
 }
 

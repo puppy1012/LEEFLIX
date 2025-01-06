@@ -1,7 +1,7 @@
 import 'package:asfw3/screen/home_screen.dart';
 import 'package:asfw3/widget/bottom_bar.dart';
 import 'package:flutter/material.dart';
-
+//https://www.inflearn.com/courses/lecture?courseId=324976&unitId=37784&subtitleLanguage=ko
 void main() => runApp(MyApp());
 
 class MyApp extends StatefulWidget {
