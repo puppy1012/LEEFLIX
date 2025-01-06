@@ -1,5 +1,7 @@
 import 'package:asfw3/model/model_movie.dart';
+import 'package:asfw3/widget/box_slider.dart';
 import 'package:asfw3/widget/carousel_slider.dart';
+import 'package:asfw3/widget/circle_slider.dart';
 import 'package:flutter/material.dart';
 //영화정보 상단바,전체화면,포스터 등 구현
 
@@ -49,7 +51,9 @@ class _HomeScreenState extends State<HomeScreen> {
             CarouselImage(movies: movies),
             TopBar(),
           ],
-        )
+        ),
+        CircleSlider(movies: movies),
+        BoxSlider(movies: movies),
       ],
     );
   }
